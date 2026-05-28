@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Test4 {
+public class Task4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in); //Создаём сканнер
 		int number;

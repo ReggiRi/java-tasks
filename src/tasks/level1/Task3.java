@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Test3 {
+
+public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); //Сканируем строку
 	System.out.println("Ведите строку");

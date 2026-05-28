@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Test {
+
+public class Task1 {
     public static void main(String[] args) {
         Scanner numberPlusOrMinus = new Scanner(System.in);
 	System.out.println("Введите число");

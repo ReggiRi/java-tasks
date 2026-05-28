@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Test5 {
+public class Task5 {
 	public static void main(String[] args) { 
 		Scanner scanner = new Scanner(System.in); //Создаём сканнер
 		System.out.println("Ввдите первое слово");
