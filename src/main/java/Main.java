@@ -56,16 +56,19 @@ public class Main {
             return;
         }
 
+        scanner.close();
+
         String className = "tasks.level" + level + ".sublevel" + sublevel + ".Task" + taskNumber;
 
         try {
-            Class<?> clazz = Class.forName(className);
-            Method main = clazz.getMethod("main", String[].class);
-            main.invoke(null, (Object) new String[]{});
+            ProcessBuilder pb = new ProcessBuilder(
+                "java", "-cp", "build/classes/java/main", className
+            );
+            pb.inheritIO();
+            Process process = pb.start();
+            process.waitFor();
         } catch (Exception e) {
-            System.out.println("Ошибка: задача не найдена");
+            System.out.println("Ошибка: " + e.getMessage());
         }
-
-        scanner.close();
     }
 }
